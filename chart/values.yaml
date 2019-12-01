@@ -1,0 +1,18 @@
+environment: development
+
+apphost: k8s
+
+label:
+  name: aspnet3core
+
+container:
+  name: aspnet3
+  pullPolicy: IfNotPresent
+  image: aspnet3k8s
+  tag: v1
+  port: 80
+replicas: 3
+
+service:
+  port: 8888
+  type: ClusterIP

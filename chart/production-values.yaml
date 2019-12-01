@@ -1,0 +1,2 @@
+environment: production
+replicas: 5
