@@ -11,6 +11,7 @@ container:
   image: aspnet3k8s
   tag: v1
   port: 80
+
 replicas: 3
 
 service:
